@@ -18,7 +18,7 @@
 
 ## 📌 Overview
 
-Offline Dovecot IMAP/POP3 configuration security auditor
+ODovecotX — Dovecot IMAP / POP3 Configuration Auditor. It provides stdlib Dovecot parser — sections, !include globs, <file values, $vars, `doveconf -n` exports; Auth, passdb / userdb (hashes never printed), SQL / LDAP ext, TLS, listeners, services, sieve. Built-in demo/self-test paths and severity gates help validate detections without touching production when those flags are used.
 
 ---
 
@@ -42,7 +42,10 @@ Offline Dovecot IMAP/POP3 configuration security auditor
 ## 🚀 Usage
 
 ```bash
-./ODovecotX
+./ODovecotX                                     # interactive menu
+./ODovecotX --scan -r /path/to/root
+./ODovecotX --demo
+./ODovecotX --help
 ```
 
 ---
